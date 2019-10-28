@@ -1,0 +1,26 @@
+{
+  "name": "cz-emoji-kl",
+  "version": "1.0.1",
+  "description": "Commitizen adapter formatting commit messages using emojis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "commitizen"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cli-truncate": "^2.0.0",
+    "fs-extra": "^8.1.0",
+    "pad": "^3.2.0",
+    "read-pkg-up": "^7.0.0",
+    "shelljs": "^0.8.3"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
+}

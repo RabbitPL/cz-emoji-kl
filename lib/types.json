@@ -1,0 +1,68 @@
+[
+  {
+    "emoji": "✨",
+    "code": "feat",
+    "description": "新功能（feature）",
+    "name": "feat"
+  },
+  {
+    "emoji": "🐛",
+    "code": "fix",
+    "description": "修补bug",
+    "name": "fix"
+  },
+  {
+    "emoji": "🎨",
+    "code": "style",
+    "description": "格式（不影响代码运行的变动）",
+    "name": "style"
+  },
+  {
+    "emoji": "🔨",
+    "code": "refactor",
+    "description": "重构（即不是新增功能，也不是修改bug的代码变动）",
+    "name": "refactor"
+  },
+  {
+    "emoji": "🔥",
+    "code": "chore",
+    "description": "构建过程或辅助工具的变动",
+    "name": "chore"
+  },
+  {
+    "emoji": "🚨",
+    "code": "lint",
+    "description": "lint规范格式化",
+    "name": "lint"
+  },
+  {
+    "emoji": "⏪",
+    "code": "revert",
+    "description": "Reverting changes.",
+    "name": "revert"
+  },
+  {
+    "emoji": "🔀",
+    "code": "merge",
+    "description": "Merging branches.",
+    "name": "merge"
+  },
+  {
+    "emoji": "🎉",
+    "code": "init",
+    "description": "Initial commit.",
+    "name": "init"
+  },
+  {
+    "emoji": "📝",
+    "code": "docs",
+    "description": "文档（documentation）",
+    "name": "docs"
+  },
+  {
+    "emoji": "✅",
+    "code": "test",
+    "description": "增加测试",
+    "name": "test"
+  }
+]
