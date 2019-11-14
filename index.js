@@ -66,12 +66,13 @@ function format(answers) {
     // parentheses are only needed when a scope is present
     const res = shell.exec('git symbolic-ref --short -q HEAD') || {};
     const branch = res.stdout || '';
-    const regRes = /feature_([0-9]+)_/.exec(branch);
+    const regRes = /feature_[a-zA-Z]*([0-9]+)_/.exec(branch); // 兼容kep类型是bug
     const defaultTask = regRes && regRes[1] || ''; // 默认从分支获取任务
     const scope = answers.scope ? `(${answers.scope.trim()})` : ''
     const taskType = answers.taskType ? answers.taskType.trim() : 'task'
     const kepId = answers.kepId ? answers.kepId.trim() : defaultTask
-    const kepIdCommit = `kep#${taskType}-${kepId}` 
+    // 兼容普通工程，没有任务ID则不展示kep信息
+    let kepIdCommit = kepId ? `kep#${taskType}-${kepId}` : ''; 
   
     // TODO: 这个appends又是啥
     let appends = '';
